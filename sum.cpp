@@ -1,14 +1,17 @@
-# include <iostream>
+#include <iostream>
 using namespace std;
-int main()
-{
-    int n,sum=0;
-    cout<<"enter value of n;";
-    cin>>n;
-    for(int i=0;i<=n; i++)
-    {
-        sum=sum+1;
+
+int main() {
+    int n, sum = 0;
+    
+    cout << "Enter n: ";
+    cin >> n;
+    
+    for (int i = 1; i <= n; i++) {
+        sum = sum + i;
     }
-    cout<<"sum of series ="<< sum;
+    
+    cout << "Sum of series = " << sum << endl;
+    
     return 0;
 }
